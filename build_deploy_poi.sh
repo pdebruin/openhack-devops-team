@@ -116,7 +116,7 @@ pwd
 dir
 
 #pushd $relativeSaveLocation/openhack-devops-team/apis/poi/web
-pushd poi/web
+pushd ./apis/poi/web
 
 docker build . -t $TAG
 
@@ -127,7 +127,7 @@ echo -e "\nSuccessfully pushed image: "$TAG
 popd
 
 #installPath=$relativeSaveLocation"/openhack-devops-team/apis/poi/charts/mydrive-poi"
-installPath=poi/charts/mydrive-poi"
+installPath=./apis/poi/charts/mydrive-poi"
 echo -e "\nhelm install from: " $installPath "\n\n"
 
 BASE_URI='http://'$dnsUrl
