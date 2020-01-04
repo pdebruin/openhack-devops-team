@@ -10,6 +10,14 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'OTA-PRD-1353'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az login'
+    addSpnToEnvironment: true
+
 - task: Bash@3
   inputs:
     filePath: './apis/build_deploy_poi.sh'
