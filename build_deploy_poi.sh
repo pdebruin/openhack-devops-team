@@ -113,7 +113,7 @@ TAG=$ACR_ID"/devopsoh/"$imageTag
 echo "TAG: "$TAG
 
 pwd
-ll
+dir
 
 #pushd $relativeSaveLocation/openhack-devops-team/apis/poi/web
 pushd poi/web
