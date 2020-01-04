@@ -125,7 +125,7 @@ echo "Successfully pushed image: "$TAG
 popd
 
 #installPath=$relativeSaveLocation"/openhack-devops-team/apis/trips/charts/mydrive-trips"
-installPath=./apis/trips/charts/mydrive-trips"
+installPath=./apis/trips/charts/mydrive-trips
 echo -e "\nhelm install ... from: " $installPath
 
 BASE_URI='http://'$dnsUrl
