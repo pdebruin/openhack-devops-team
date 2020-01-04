@@ -16,5 +16,5 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
     scriptPath: './apis/build_deploy_poi.sh'
-    arguments: '-b Debug -r openhackyij7rg -t devopsoh/api-poi:latest -s . -d akstraefikopenhackyij7.westus.cloudapp.azure.com -n openhackyij7 -g openhackyij7acr'
+    arguments: '-b Debug -r openhackyij7rg -t api-poi:latest -s ../../ -d akstraefikopenhackyij7.westus.cloudapp.azure.com -n openhackyij7 -g openhackyij7acr'
     addSpnToEnvironment: true
