@@ -14,11 +14,7 @@ steps:
   inputs:
     azureSubscription: 'OTA-PRD-1353'
     scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az account show'
-    addSpnToEnvironment: true
-
-- task: Bash@3
-  inputs:
-    filePath: './apis/build_deploy_poi.sh'
+    scriptLocation: 'scriptPath'
+    scriptPath: './apis/build_deploy_poi.sh'
     arguments: '-b Debug -r openhackyij7rg -t devopsoh/api-poi:latest -s ./poi/ -d akstraefikopenhackyij7.westus.cloudapp.azure.com -n openhackyij7 -g openhackyij7acr'
+    addSpnToEnvironment: true
