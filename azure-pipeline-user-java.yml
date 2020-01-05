@@ -5,7 +5,8 @@
 
 trigger:
   paths:
-    include: ['./apis/user-java']
+    include: 
+      - apis/user-java/*
 
 #pool:
 #  vmImage: 'ubuntu-latest'

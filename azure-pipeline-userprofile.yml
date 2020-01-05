@@ -5,7 +5,8 @@
 
 trigger:
   paths:
-    include: ['./apis/userprofile']
+    include: 
+      - apis/userprofile/*
 
 #pool:
 #  vmImage: 'ubuntu-latest'

@@ -5,8 +5,9 @@
 
 trigger:
   paths:
-    include: ['./apis/trips']
-
+    include: 
+      - apis/trips/*
+  
 #pool:
 #  vmImage: 'ubuntu-latest'
 pool: Default
