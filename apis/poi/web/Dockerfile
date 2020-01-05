@@ -11,6 +11,7 @@ RUN dotnet publish -c Release -o out
 COPY ./appsettings.*.json /app/out/
 COPY ./appsettings.json /app/out/
 
+# PdB
 RUN dotnet test
 
 # build runtime image
