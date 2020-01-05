@@ -5,7 +5,8 @@
 
 trigger:
   paths:
-    include: ['./apis/poi']
+    include: 
+    - apis/poi/*
 
 #pool:
 #  vmImage: 'ubuntu-latest'
