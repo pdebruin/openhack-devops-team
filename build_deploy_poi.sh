@@ -131,4 +131,4 @@ BASE_URI='http://'$dnsUrl
 echo "Base URI: $BASE_URI"
 
 #helm install $installPath --name api-poi --set repository.image=$TAG,env.webServerBaseUri=$BASE_URI,ingress.rules.endpoint.host=$dnsUrl
-helm upgrade api-poi $installPath
+helm upgrade api-poi $installPath --set repository.image=$TAG,env.webServerBaseUri=$BASE_URI,ingress.rules.endpoint.host=$dnsUrl
