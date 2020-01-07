@@ -125,9 +125,10 @@ echo "Successfully pushed image: "$TAG
 popd
 
 #installPath=$relativeSaveLocation"/openhack-devops-team/apis/user-java/charts/mydrive-user-java"
-installPath=./apis/user-java/charts/mydrive-user-java
+installPath="apis/user-java/charts/mydrive-user-java"
 echo -e "\nhelm install ... from: " $installPath
 
 BASE_URI='http://'$dnsUrl
 echo "Base URI: $BASE_URI"
 #helm install $installPath --name api-user-java --set repository.image=$TAG,env.webServerBaseUri=$BASE_URI,ingress.rules.endpoint.host=$dnsUrl
+helm upgrade api-user-java $installPath --set repository.image=$TAG,env.webServerBaseUri=$BASE_URI,ingress.rules.endpoint.host=$dnsUrl
